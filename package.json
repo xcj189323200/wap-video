@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vue-cli-service serve --copy --mode dev",
+    "pro": "vue-cli-service build  --mode pro",
+    "test": "vue-cli-service build  --mode test",
+    "lint": "vue-cli-service lint --fix",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "lib-flexible": "^0.3.2",
+    "postcss-px2rem": "^0.3.0",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.6",
+    "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
